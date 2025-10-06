@@ -1,0 +1,57 @@
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+
+header {
+    background-color: var(--background-color);
+    position: fixed; /* navbaren följer med när man scrollar */
+    top: 0%;
+    width: 100%;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto 0.2fr auto 0.3fr auto;
+}
+
+#logo {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem;
+}
+
+nav a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: montserrat; 
+}
+
+#search-input > input {
+    display: flex;
+    margin: 4rem;
+    float: right;
+    padding: 6px;
+    border: none;
+    font-size: 15px;
+    font-family: montserrat;
+}
+
+a:active {
+  color: var(--button-primary);
+} /* fungerar ej */
+
+a:hover {
+  color: var(--button-primary);
+}

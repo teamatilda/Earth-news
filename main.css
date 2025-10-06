@@ -1,0 +1,52 @@
+
+#main-section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    background-color: var(--background-color);
+}
+
+.article-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.articles { /* innehållet i korten */
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    padding-top: 2rem;
+    background-color: white;
+    gap: 1rem; /* ändrar inom kortet */
+    margin: 1.5rem; /* mellan korten */
+    align-items: center;
+    border-radius: 5px;
+    width: 300px;
+    height: 400px;
+}
+
+#article-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-section h3 a {
+    font-family: montserrat;
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+#main-section h3 a:hover {
+    text-decoration: underline;
+}
+
+#main-section p {
+    font-family: montserrat;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    margin-bottom: 10px;
+}
