@@ -5,6 +5,7 @@
     justify-content: center;
 }
 
+@media screen and (min-width: 992px) {
 #hero-section > div {
     background-color: var(--background-color);
     display: grid;
@@ -13,21 +14,35 @@
     gap: 1.5rem;
     margin-top: 150px;
 }
+}
+
+@media screen and (min-width: 992px) {
+    #sidebar {
+        height: 650px;
+        width: 300px;
+    }
+}
 
 #sidebar {
     background: white;
     display: flex;
     flex-direction: column;
-    height: 650px;
-    width: 300px;
     border-radius: 5px;
     align-items: center;
     justify-content: center;
 }
 
+@media screen and (max-width: 992px) {
+    #sidebar {
+        padding: 1rem;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
 #sidebar img {
-    padding-left: 45px;
-    padding-top: 5px;
+    display: block;
+    margin: auto;
 }
 
 #sidebar a {
@@ -48,14 +63,19 @@ hr {
     width: 250px;
 }
 
+@media screen and (min-width: 992px) {
+    #hero-right {
+        height: 650px;
+        width: 950px;
+    }
+}
+
 #hero-right {
     display: flex;
     flex-direction: column; 
     align-items: center;
     justify-content: center;
     background-color: white;
-    height: 650px;
-    width: 950px;
     border-radius: 5px;
 }
 
@@ -63,13 +83,32 @@ hr {
     margin-top: 1.5rem;
 }
 
+@media screen and (max-width: 768px) {
+    #hero-right img {
+        width: 70%;
+    }
+}
+
 h1 a {
-    font-size: 25px;
     color: var(--h-primary-color);
     text-decoration: none;
     font-family: montserrat;
+}
+
+@media screen and (min-width: 992px) {
+    h1 a {
+    font-size: 25px;
     margin-left: 40px;
 }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 100%;
+        text-align: center;
+    }
+}
+
 
 h1 a:hover {
     text-decoration: underline;
@@ -81,6 +120,7 @@ h1 a:hover {
     font-size: 15px;
     line-height: 1.2;
     color: var(--primary-text-color);
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    text-align: center;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
 }

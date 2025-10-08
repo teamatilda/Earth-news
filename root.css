@@ -5,3 +5,10 @@
     --h-primary-color: #405d27;
     --button-primary: #82b74b;
 }
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}

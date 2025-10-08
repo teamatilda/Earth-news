@@ -8,29 +8,65 @@
     background-color: var(--background-color);
 }
 
+#main-section h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: montserrat;
+    color: var(--h-primary-color);
+}
+
+@media screen and (min-width: 768px) {
+    #main-section h2 {
+        font-size: 200%;
+    }
+}
+
+@media screen and (min-width: 992px) {
 .article-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
-.articles { /* innehållet i korten */
-    display: flex;
-    flex-direction: column;
-    padding: 4rem;
-    padding-top: 2rem;
-    background-color: white;
-    gap: 1rem; /* ändrar inom kortet */
-    margin: 1.5rem; /* mellan korten */
-    align-items: center;
-    border-radius: 5px;
-    width: 300px;
-    height: 400px;
 }
 
-#article-info {
+@media screen and (max-width: 768px) {
+.article-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    border-radius: 5px;
+    gap: 1rem; /* ändrar inom kortet */
+    margin: 1.5rem; /* mellan korten */
+    background-color: white;
+    padding-top: 2rem;
+    min-width: 275px;
+    max-width: 300px;
+    
+}
+
+@media screen and (min-width: 992px) {
+.articles { /* innehållet i korten */
+    padding: 4rem;
+    height: 400px;
+    padding-top: 2rem;
+}
+}
+
+.articles img {
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+    .articles img {
+        max-width: 80%;
+    }
 }
 
 #main-section h3 a {
@@ -39,14 +75,27 @@
     color: var(--primary-text-color);
 }
 
+@media screen and (max-width: 992px) {
+    #main-section h3 {
+        font-size: 80%;
+        margin: 20px;
+    }
+}
+
 #main-section h3 a:hover {
     text-decoration: underline;
 }
 
 #main-section p {
     font-family: montserrat;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     margin: 3px;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #main-section p {
+        font-size: 80%;
+        margin: 15px;
+    }
 }

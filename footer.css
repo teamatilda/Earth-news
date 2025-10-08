@@ -6,45 +6,93 @@ footer {
     padding: 2.5rem;
 }
 
-#newsletter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--background-color);
-    padding: 2rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
-} 
-
-#newsletter h2 {
-    margin-right: 3rem;
-    color: var(--h-primary-color);
-    font-size: 30px;
+@media screen and (min-width: 992px) {
+    #newsletter {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--background-color);
+    }
 }
 
+@media screen and (max-width: 768px) {
+    #newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+} 
+
+@media screen and (min-width: 992px) {
+    #newsletter h2 {
+        align-items: center;
+        margin-right: 3rem;
+        color: var(--h-primary-color);
+        font-size: 30px;
+}
+}
+
+@media screen and (max-width: 768px) {
+    #newsletter h2 {
+        text-align: center;
+        color: var(--h-primary-color);
+        font-size: 140%;
+}
+}
+
+@media screen and (min-width: 992px) {
+    #social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        background-color: var(--background-color);
+        margin-left: 10rem;
+        margin-right: 10rem;
+        gap: 3rem;
+        color: var(--primary-text-color);
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
 #social-media {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--background-color);
-    margin-left: 10rem;
-    margin-right: 10rem;
-    gap: 3rem;
     color: var(--primary-text-color);
-    font-size: 15px;
+    font-size: 80%;
 } 
+}
 
 .social-media-icons {
     display: flex;
     gap: 2rem;
 }
 
+@media screen and (min-width: 992px) {
 .newsletter input {
     display: flex;
     border: none;
     padding: 6px;
     font-size: 15px;
     font-family: montserrat;
+}
+}
+
+@media screen and (max-width: 768px) {
+    .newsletter input {
+        display: flex;
+        padding: 3px;
+        font-size: 15px;
+        font-family: montserrat;
+        margin: 0.5rem;
+    }
 }
 
 #subscribe-btn {
