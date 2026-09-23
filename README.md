@@ -4,3 +4,7 @@ Project in the first course (HTML and CSS) in Front-end development education at
 
 
 ![alt text](/images/earthnews1.png)
+
+![alt text](/images/earthnews2.png)
+
+![alt text](/images/earthnews3.png)
